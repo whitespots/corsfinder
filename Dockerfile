@@ -7,6 +7,9 @@ CMD echo https://$DOMAIN > /tmp/result.txt &&\
  cat /tmp/result.txt | \
   grep -v _Incapsula_Resource |\
   grep -v .js |\
+  grep -v .txt |\
+  grep -v .ico |\
+  grep -v .css |\
   grep -v .woff |\
   grep -v 'data:image' |\
   grep -v .svg \
